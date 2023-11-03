@@ -1,6 +1,6 @@
 from flask import Flask, request
-import cntk
-from driver import *
+# import cntk
+# from driver import *
 import time
 
 app = Flask(__name__)
@@ -27,9 +27,9 @@ def healthy():
 
 
 # CNTK Version
-@app.route('/version', methods = ['GET'])
+@app.route('/healthcheck', methods = ['GET'])
 def version_request():
-    return cntk.__version__
+    return print('The app works!')
 
 
 if __name__ == "__main__":
