@@ -14,7 +14,8 @@ def scoreRRS():
         return Response(json.dumps({}), status= 415, mimetype ='application/json')
     input = request.json['input']
     start = time.time()
-    response = run(input)
+    #response = run(input)
+    response = '50'
     end = time.time() - start
     dict = {}
     dict['result'] = response
