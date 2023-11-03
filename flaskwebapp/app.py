@@ -30,7 +30,7 @@ def healthy():
 # CNTK Version
 @app.route('/healthcheck', methods = ['GET'])
 def version_request():
-    return print('The app works!')
+    return print('WORK')
 
 
 if __name__ == "__main__":
