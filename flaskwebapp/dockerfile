@@ -21,5 +21,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     pip3 install -r /code/requirements.txt
     # pip install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.0-cp27-cp27mu-linux_x86_64.whl
 
-EXPOSE 88
-CMD ["app.py"]
+ENTRYPOINT [ "python3" ]
+CMD ["app.py" ]
