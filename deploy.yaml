@@ -5,6 +5,6 @@ metadata:
 spec:
  containers:
    - name: model-api
-     image: $ACR_DNS/model-api:$(Build.BuildId)
+     image: xgao198902/model:$(Build.BuildId)
      ports:
-       - containerPort: 88
+       - containerPort: 5000
